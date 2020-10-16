@@ -102,21 +102,5 @@
     "versionCompatibility": {
       "ember": ">=1.13.13"
     }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn lint:js && yarn nodetest"
-    }
-  },
-  "lint-staged": {
-    "**/*.{json,css,scss,md}": [
-      "prettier --write",
-      "git add"
-    ],
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "git add"
-    ]
   }
 }
