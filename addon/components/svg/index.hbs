@@ -1,3 +1,5 @@
-{{!-- {{#let (component @name) as |Svg|}}
-  <Svg ...attributes />
-{{/let}} --}}
+{{#if this.ready}}
+  {{#let (component this.fullComponentName) as |Svg|}}
+    <Svg ...attributes />
+  {{/let}}
+{{/if}}
